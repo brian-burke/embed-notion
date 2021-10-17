@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { Accordion } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 
 function CustomAccordianItem(props) {
-  const optionItems = props.options.map((option) => (
-    <Row>
-      <Col xs={6} md={4}>
+  const optionItems = props.options.map((option,index) => (
+    <Row key={index}>
+      <Col xs={6} md={6}>
         {option}
       </Col>
-      <Col xs={6} md={4}>
+      <Col xs={6} md={6}>
         <Form>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Group className="mb-3">
             <Form.Check
               type="checkbox"
               label="Select"
-              checked={true}
-              onClick={(e) => {
-                props.sendDataToParent(e);
+              checked={props.checkState[index]}
+              id={[props.optionIndex,index]}
+              onChange={(e) => {
+                props.updateCheckState(e);
               }}
             />
           </Form.Group>

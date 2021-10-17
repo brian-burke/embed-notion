@@ -71,8 +71,7 @@ function App() {
       })}
     </tbody>
   ));
-
-
+  
   let sum = 0
 
   state.items.forEach((item) => {
