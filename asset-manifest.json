@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/embed-notion/static/css/main.a617e044.chunk.css",
-    "main.js": "/embed-notion/static/js/main.a854a620.chunk.js",
-    "main.js.map": "/embed-notion/static/js/main.a854a620.chunk.js.map",
-    "runtime-main.js": "/embed-notion/static/js/runtime-main.c9df5c39.js",
-    "runtime-main.js.map": "/embed-notion/static/js/runtime-main.c9df5c39.js.map",
-    "static/js/2.904552cc.chunk.js": "/embed-notion/static/js/2.904552cc.chunk.js",
-    "static/js/2.904552cc.chunk.js.map": "/embed-notion/static/js/2.904552cc.chunk.js.map",
-    "static/js/3.208d56be.chunk.js": "/embed-notion/static/js/3.208d56be.chunk.js",
-    "static/js/3.208d56be.chunk.js.map": "/embed-notion/static/js/3.208d56be.chunk.js.map",
+    "main.js": "/embed-notion/static/js/main.5922e7fd.chunk.js",
+    "main.js.map": "/embed-notion/static/js/main.5922e7fd.chunk.js.map",
+    "runtime-main.js": "/embed-notion/static/js/runtime-main.f8d5a8e9.js",
+    "runtime-main.js.map": "/embed-notion/static/js/runtime-main.f8d5a8e9.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/embed-notion/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.020e59d4.chunk.js": "/embed-notion/static/js/2.020e59d4.chunk.js",
+    "static/js/2.020e59d4.chunk.js.map": "/embed-notion/static/js/2.020e59d4.chunk.js.map",
+    "static/js/3.1a4006c4.chunk.js": "/embed-notion/static/js/3.1a4006c4.chunk.js",
+    "static/js/3.1a4006c4.chunk.js.map": "/embed-notion/static/js/3.1a4006c4.chunk.js.map",
     "index.html": "/embed-notion/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/embed-notion/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.904552cc.chunk.js.LICENSE.txt": "/embed-notion/static/js/2.904552cc.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/embed-notion/static/media/logo.6ce24c58.svg"
+    "static/css/2.0a9ec390.chunk.css.map": "/embed-notion/static/css/2.0a9ec390.chunk.css.map",
+    "static/js/2.020e59d4.chunk.js.LICENSE.txt": "/embed-notion/static/js/2.020e59d4.chunk.js.LICENSE.txt",
+    "static/media/krzysztof-kowalik-t8p9dbMpAzg-unsplash.87571e2c.jpg": "/embed-notion/static/media/krzysztof-kowalik-t8p9dbMpAzg-unsplash.87571e2c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9df5c39.js",
-    "static/js/2.904552cc.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.a854a620.chunk.js"
+    "static/js/runtime-main.f8d5a8e9.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.020e59d4.chunk.js",
+    "static/js/main.5922e7fd.chunk.js"
   ]
 }
