@@ -1,103 +1,13 @@
-import React, { useState } from "react";
-import Table from "react-bootstrap/Table";
-import { Accordion } from "react-bootstrap";
-import CustomAccordianItem from "./components/CustomAccordianItem";
+import React from "react";
+import SingleTripGrid from "../components/singleTripGrid"
 
-function App() {
-  const [state, setState] = useState({
-    items: [
-      {
-        name: "Transportation",
-        optionList: ["option 1", "option 2"],
-        checkStateList: [false, false],
-        cost: [420, 421],
-      },
-      {
-        name: "Accomodation",
-        optionList: ["option 1", "option 2"],
-        checkStateList: [false, false],
-        cost: [420, 421],
-      },
-      {
-        name: "Rental",
-        optionList: ["option 1", "option 2"],
-        checkStateList: [false, false],
-        cost: [420, 421],
-      },
-      {
-        name: "Passes",
-        optionList: ["real content", "option 2"],
-        checkStateList: [false, false],
-        cost: [420, 421],
-      },
-    ],
-  });
-
-  const updateCheckState = (e) => {
-    const newItems = [...state.items];
-    newItems[e.target.id[0]].checkStateList = [false, false];
-    if (e.target.checked){
-      newItems[e.target.id[0]].checkStateList[e.target.id[2]] = true;
-    }
-
-    setState((state) => ({
-      ...state,
-      items: newItems,
-    }));
-  };
-
-  const AccordianItems = state.items.map((item, index) => (
-    <CustomAccordianItem
-      key={index}
-      header={item.name}
-      eventKey={index}
-      options={item.optionList}
-      checkState={item.checkStateList}
-      optionIndex={index}
-      updateCheckState={updateCheckState}
-    />
-  ));
-
-  const TableBody = state.items.map((item, index) => (
-    <tbody key={index}>
-      {item.checkStateList.map((checkState, checkIndex) => {
-        return checkState ? (
-          <tr key={index}>
-            <td>{item.name}</td>
-            <td>{item.optionList[checkIndex]}</td>
-            <td>{item.cost[checkIndex]}</td>
-          </tr>
-        ) : null;
-      })}
-    </tbody>
-  ));
-  
-  let sum = 0
-
-  state.items.forEach((item) => {
-    item.checkStateList.forEach((checkState,index) => {
-      if(checkState){
-        sum += item.cost[index]
-      }
-    });
-  });
-
+function Home() {
   return (
     <>
-      <Accordion>{AccordianItems}</Accordion>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Selection</th>
-            <th>Option Selected</th>
-            <th>Cost</th>
-          </tr>
-        </thead>
-        {TableBody}
-      </Table>
-      <h1>TOTAL {sum}</h1>
+    <h1 class="text-center p-3">POT MARC TRIP PLANNER</h1>
+      <SingleTripGrid />
     </>
   );
 }
 
-export default App;
+export default Home;
