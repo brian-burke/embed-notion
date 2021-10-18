@@ -8,6 +8,12 @@ function SingleTripGrid() {
   const [state, setState] = useState({
     items: [
       {
+        name: "Flights",
+        optionList: ["option 1"],
+        checkStateList: [true],
+        cost: [200],
+      },
+      {
         name: "Transportation",
         optionList: ["option 1", "option 2"],
         checkStateList: [false, false],
@@ -27,7 +33,7 @@ function SingleTripGrid() {
       },
       {
         name: "Passes",
-        optionList: ["real content", "option 2"],
+        optionList: ["option 1", "option 2"],
         checkStateList: [false, false],
         cost: [420, 421],
       },
@@ -94,7 +100,7 @@ function SingleTripGrid() {
         </thead>
         {TableBody}
       </Table>
-      <h1 class="text-end">TOTAL {sum}</h1>
+      <h1 className="text-end">TOTAL {sum}</h1>
     </>
   );
 }
